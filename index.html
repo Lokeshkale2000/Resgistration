@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="index.css">
-    
- 
-</head>
-<body>
+   
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Registration Form</h2>
-        <form id="registrationForm">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
-            <div id="fullNameError" class="error"></div>
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+        <div id="fullNameError" class="error"></div>
 
-            <label for="email">Email ID:</label>
-            <input type="email" id="email" name="email" required>
-            <div id="emailError" class="error"></div>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required />
+        <div id="emailError" class="error"></div>
 
-            <label for="mobile">Mobile No:</label>
-            <input type="tel" id="mobile" name="mobile" pattern="^[789]\d{9}$" required>
-            <div id="mobileError" class="error"></div>
+        <label for="mobile">Mobile No:</label>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          pattern="^[789]\d{9}$"
+          required
+        />
+        <div id="mobileError" class="error"></div>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <div id="usernameError" class="error"></div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <div id="usernameError" class="error"></div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <div id="passwordError" class="error"></div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <div id="passwordError" class="error"></div>
 
-            <button type="submit">Submit</button>
-        </form>
-        <p id="message"></p>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="message"></p>
     </div>
-   <div>
-    <h2>Registered Users</h2>
-    <table id="userTable" border="1">
+    <div>
+      <h2>Registered Users</h2>
+      <table id="userTable" border="1">
         <thead>
-            <tr>
-                <th>Full Name</th>
-                <th>Email</th>
-                <th>Mobile</th>
-                <th>Username</th>
-            </tr>
+          <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Username</th>
+          </tr>
         </thead>
-        <tbody>
-        </tbody>
-    </table>
-</div>
- 
-</body>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
